@@ -45,3 +45,25 @@ console.log(firstBook, secondBook);
 // This is you destructing
 const [buk1, buk2, buk3, buk4, buk5] = books;
 console.log(buk1);
+
+console.log(
+  ` 
+  %c 1.2
+  `,
+  "color:orange;font-size:1rem"
+);
+
+/*
+Destructure the books array into a variable called thirdBook. You must skip the first two books.
+*/
+const [, , thirdBook] = books;
+console.log(thirdBook);
+
+/*
+1.3﻿
+Below is the nested ratings array that contains two other arrays. Destructure the nested ratings arrays into two variables called rating and ratingsCount. In the result of your destructuring, the ratings variable should store a number 4.19, and the ratingsCount variable should store a number 144584.
+*/
+const ratings = [
+  ["rating", 4.19],
+  ["ratingsCount", 144584],
+];
