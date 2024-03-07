@@ -8,7 +8,7 @@ console.log(
 ⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⣿⣿⣿⣶⣌⡛⢿⣽⢘⣿⣷⣿⡻⠏⣛⣀⠄⠄
 ⠄⠄⠄⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠙⡅⣿⠚⣡⣴⣿⣿⣿⡆⠄
 ⠄⠄⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⣱⣾⣿⣿⣿⣿⣿⣿⠄ 103: Destructing Arrays
-⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⠄
+⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⠄  DC = Destructuring
 ⠄⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠣⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄
 ⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠑⣿⣮⣝⣛⠿⠿⣿⣿⣿⣿⠄
 ⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄
@@ -43,7 +43,7 @@ Manual desctruc
 `);
 
 // Array Destructuring
-
+console.log("Destructuring with variables");
 const [x, y, z] = numAr1;
 console.log(x, y, z);
 
@@ -61,16 +61,72 @@ DC Main Obj
 const restaurant = {
   name: "Woman Juices",
   location: "Sweaty Gym Booties",
-  categories: ["Sno, Far, Sca, Pis, Spi"],
-  starterMenu: ["Swea", "Pits, Pan"],
-  mainMenu: ["Jui, Sti, Smel"],
+  categories: ["Sno", "Far", "Sca", "Pis", "Spi"],
+  starterMenu: ["Swea", "Pits", "Pan"],
+  mainMenu: ["Jui", "Sti", "Smel"],
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 };
+
 console.log("Printing it out in table format", "color:green");
 console.table(restaurant);
 console.log(typeof restaurant);
 
 // Code for looping through object taken from mistral
+console.log(
+  "%c Using loop to print out all objects",
+  "color:yellow;font-style:underline"
+);
 for (let key in restaurant) {
+  // console.log("Method 1");
   console.log(key, ":", restaurant[key]);
   console.table(key, ":", restaurant[key]);
 }
+
+// Take only first two elements
+console.log("%c Extracting specific elements", "color:yellow");
+const [a1, , , b1] = restaurant.categories;
+console.log(a1, b1);
+
+// Changine elements in the objects
+console.log(
+  `
+%c Switching variables`,
+  "color:yellow"
+);
+// let [main, secondary] = restaurant.categories;
+// console.log(main, secondary);
+
+// Creating  new array inverted , Using DC for switching variables
+// [main, secondary] = [secondary, main];
+// console.log(main, secondary);
+
+// console.log(restaurant.order(2, 0));
+
+// DC received two return values from a function
+const [starter, main] = restaurant.order(0, 2);
+console.log(starter, main);
+
+// Nested Arrasys
+const nestedAr = [2, 3, 4, [6, 7]];
+
+//calling array
+// const [i, , , j] = nestedAr;
+// console.log(i, j);
+
+// DC inside DC
+const [i, , , [j, k]] = nestedAr;
+console.log(i, j, k);
+
+// Default values for array
+
+console.log(
+  `
+%c Default Values in DC of array `,
+  "color:yellow"
+);
+
+const [p = 1, q = 1, r = 1] = [8, 9];
+console.log(p, q, r);
