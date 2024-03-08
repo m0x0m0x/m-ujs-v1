@@ -90,3 +90,34 @@ console.log(
   `,
   "color:orange;font-size:1rem"
 );
+
+// Given
+const ratingStars = [63405, 1808];
+
+// My Solution
+const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+console.table(ratingStars);
+console.log(` fiveStarRatings = ${fiveStarRatings}`);
+console.log(` oneStarRatings = ${oneStarRatings}`);
+console.log(` threeStarRatings = ${threeStarRatings}`);
+
+/*
+========================
+Section 2 Starts here 
+========================
+*/
+console.log(` %c Section 2`, "color:yellow;font-size:2rem");
+
+/* 
+2.1﻿
+Destructure the first book object from the books array into variables called title, author and ISBN.
+*/
+
+const { title, author, isbn } = books[0];
+console.log(title, author, isbn);
+console.table(title, author, isbn);
+
+/*
+2.1﻿
+Destructure the first book object from the books array into variables called title, author and ISBN.
+*/
