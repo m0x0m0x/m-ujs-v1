@@ -45,3 +45,31 @@ const restaurantP = {
 const { nameP, openingHoursP, categoriesP } = restaurantP;
 console.log(nameP, openingHoursP, categoriesP);
 console.table(nameP, openingHoursP, categoriesP);
+
+// Changing variable name from property names
+
+console.log(
+  `
+%c Changing the variable names
+`,
+  "color:orange;font-size:15px"
+);
+
+const {
+  nameP: pussyP,
+  openingHoursP: sexytimeP,
+  categoriesP: fetishP,
+} = restaurantP;
+
+console.log(nameP, openingHoursP, categoriesP);
+
+console.log(
+  `
+%c Setting Defaults
+`,
+  "color:orange;font-size:15px"
+);
+
+// Setting defaults here
+const { specialMenu = [], starterMenuP: startes = [] } = restaurantP;
+console.log(specialMenu, startes);
