@@ -232,4 +232,22 @@ console.log(
 function printBookInfo({ title, author, year = "year unknown" }) {
   console.log(`${title} by ${author}, ${year}`);
 }
-printBookInfo();
+
+// You had problems because you were not calling this correctly
+printBookInfo({
+  title: "Dinko",
+  author: "biza",
+  year: "1969",
+});
+
+// printBookInfo();
+
+// Debugging - Make new object with books
+console.log(
+  ` 
+  %c 2.6 Debugging
+  `,
+  "color:orange;font-size:1rem"
+);
+const buku2 = books;
+console.table(buku2);

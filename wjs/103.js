@@ -106,6 +106,7 @@ console.log(
 // console.log(restaurant.order(2, 0));
 
 // DC received two return values from a function
+// This is the order function
 const [starter, main] = restaurant.order(0, 2);
 console.log(starter, main);
 
@@ -130,3 +131,5 @@ console.log(
 
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
+
+//
