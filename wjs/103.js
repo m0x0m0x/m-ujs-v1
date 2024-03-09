@@ -65,6 +65,22 @@ const restaurant = {
   starterMenu: ["Swea", "Pits", "Pan"],
   mainMenu: ["Jui", "Sti", "Smel"],
 
+  // new additions
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0,
+      close: 24,
+    },
+  },
+
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
@@ -132,4 +148,18 @@ console.log(
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 
-//
+/* 
+106: Destructuring Objects
+*/
+
+console.log(
+  ` 
+  %c 106 - Destructuring Objects
+  `,
+  "color:orange;font-size:1rem"
+);
+
+// New stuff added in the main object
+
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
