@@ -3,7 +3,7 @@ Destructuring Objects
 */
 
 // === Importing print functions from funz.js ===
-import { mainHead, subHead } from "./funz";
+import { mainHead, subHead } from "./funz.js";
 
 // Write header
 
@@ -48,12 +48,6 @@ console.table(nameP, openingHoursP, categoriesP);
 
 // Changing variable name from property names
 
-console.log(
-  `
-%c Changing the variable names
-`,
-  "color:orange;font-size:15px"
-);
 subHead("Changing Variable Names");
 
 // Reassigning variable names
