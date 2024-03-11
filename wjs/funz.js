@@ -9,8 +9,10 @@ Make a write function that prints in color and that will be used for ur headers
 // Main header
 export function mainHead(headText) {
   console.log(
-    `
-%c ${headText}
+    `%c 
+---
+${headText}
+---
   `,
     "color:yellow;font-size:1.2rem"
   );

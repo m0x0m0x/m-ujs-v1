@@ -41,17 +41,42 @@ const restaurantP = {
   },
 
   // Destrucuturing method
-  orderDelivery: function (obj) {
-    console.log(obj);
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(`
+Order Recieved ${this.starterMenuP[starterIndex]} and ${this.mainMenuP[mainIndex]} will be delivered to ${address} at ${time}
+    `);
   },
 };
 
 // Using the order method
+paraText("Testing an orderDelivery Method");
+restaurantP.orderDelivery({
+  time: "23:30",
+  address: "69 Juice Drive",
+  mainIndex: 2,
+  starterIndex: 2,
+});
 
 restaurantP.orderDelivery({
   time: "22:30",
   address: "69 Juice Drive",
   mainIndex: 2,
+});
+
+paraText(`
+Defining defaults in the orderDelivery Method 
+-- 
+Only the {address} and {starteIndex} is defined the rest of the 
+values are coming from the default set above
+`);
+restaurantP.orderDelivery({
+  address: "21 Nana Drive",
+  starterIndex: 1,
 });
 
 // Doing destructing with curly brances
@@ -101,6 +126,7 @@ const {
   fri: { open: o, close: c },
 } = openingHoursP;
 
+paraText("DC nested arrays and changing variable name");
 console.log(`
 Main DC Prop Fri = ${fri}
 DC open = ${o}
