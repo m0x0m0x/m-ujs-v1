@@ -2,12 +2,12 @@
 Destructuring Objects
 */
 
-console.log(
-  `
-%c 105: Destructuring Objects
-`,
-  "color:yellow;font-size:1.2rem"
-);
+// === Importing print functions from funz.js ===
+import { mainHead, subHead } from "./funz";
+
+// Write header
+
+mainHead("105: Destructuring Objects");
 
 // Main Object that will be used
 // Note you added P at the end to avoid conflicts
@@ -54,7 +54,9 @@ console.log(
 `,
   "color:orange;font-size:15px"
 );
+subHead("Changing Variable Names");
 
+// Reassigning variable names
 const {
   nameP: pussyP,
   openingHoursP: sexytimeP,
@@ -62,6 +64,7 @@ const {
 } = restaurantP;
 
 console.log(nameP, openingHoursP, categoriesP);
+console.log(pussyP, sexytimeP, fetishP);
 
 console.log(
   `
@@ -73,3 +76,23 @@ console.log(
 // Setting defaults here
 const { specialMenu = [], starterMenuP: startes = [] } = restaurantP;
 console.log(specialMenu, startes);
+
+// Mutating Varoables
+
+console.log(
+  `
+%c Mutating Variables
+`,
+  "color:orange;font-size:15px"
+);
+
+let a = 111;
+let b = 999;
+
+const obj1 = { a: 23, b: 7, c: 14 };
+
+//Override variables
+({ a, b } = obj1);
+console.log(a, b);
+
+// Nested Objects
