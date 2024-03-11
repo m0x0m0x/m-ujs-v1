@@ -35,10 +35,24 @@ const restaurantP = {
     },
   },
 
+  // Order Methods
   order: function (starterIndex, mainIndex) {
     return [this.starterMenuP[starterIndex], this.mainMenuP[mainIndex]];
   },
+
+  // Destrucuturing method
+  orderDelivery: function (obj) {
+    console.log(obj);
+  },
 };
+
+// Using the order method
+
+restaurantP.orderDelivery({
+  time: "22:30",
+  address: "69 Juice Drive",
+  mainIndex: 2,
+});
 
 // Doing destructing with curly brances
 
@@ -60,25 +74,14 @@ const {
 console.log(nameP, openingHoursP, categoriesP);
 console.log(pussyP, sexytimeP, fetishP);
 
-console.log(
-  `
-%c Setting Defaults
-`,
-  "color:orange;font-size:15px"
-);
+subHead("Settig Defaults");
 
 // Setting defaults here
 const { specialMenu = [], starterMenuP: startes = [] } = restaurantP;
 console.log(specialMenu, startes);
 
 // Mutating Varoables
-
-console.log(
-  `
-%c Mutating Variables
-`,
-  "color:orange;font-size:15px"
-);
+subHead("Mutating Variables");
 
 let a = 111;
 let b = 999;
@@ -90,3 +93,16 @@ const obj1 = { a: 23, b: 7, c: 14 };
 console.log(a, b);
 
 // Nested Objects
+subHead("Destructuring Nested Objects");
+const { fri } = openingHoursP;
+
+// Along with nested DC , also reassigning values
+const {
+  fri: { open: o, close: c },
+} = openingHoursP;
+
+console.log(`
+Main DC Prop Fri = ${fri}
+DC open = ${o}
+DC Closed = ${c}
+`);
