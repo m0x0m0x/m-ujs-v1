@@ -3,7 +3,7 @@ Destructuring Objects
 */
 
 // === Importing print functions from funz.js ===
-import { mainHead, subHead } from "./funz.js";
+import { mainHead, subHead, paraText } from "./funz.js";
 
 // Write header
 

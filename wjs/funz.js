@@ -25,3 +25,14 @@ export function subHead(subText) {
     "color:orange;font-size:15px"
   );
 }
+
+// Paragraph lines
+
+export function paraText(paraText) {
+  console.log(
+    `
+%c ${paraText}
+  `,
+    "color:#15F5BA;font-size:13px;font-style:italic "
+  );
+}
