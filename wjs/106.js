@@ -53,3 +53,27 @@ const str = "jina";
 // Syntax used for making an array of characters from strings
 const jinaLetters = [...str, "", "F."];
 console.log(jinaLetters);
+
+// Real world example
+
+// const ingredientsP = [
+//   prompt(`Let\'s make Pasta! - Ingredient 1`),
+//   prompt("Ingredient 2"),
+//   prompt("Ingredient 3"),
+// ];
+
+// console.log(ingredientsP);
+
+// restaurantP.orderPasta(...ingredientsP);
+
+//objects
+paraText("Using spread operator to add new elements to existing object");
+const newRestP = { ...restaurantP, founder: "doinga", year: "2020" };
+console.table(newRestP);
+console.log(newRestP);
+
+// Nice copy method
+const restaurantPCopy = { ...restaurantP };
+restaurantPCopy.name = "Pinty Sniff";
+console.log(restaurantP.nameP);
+console.log(restaurantPCopy.name);

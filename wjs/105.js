@@ -51,6 +51,11 @@ const restaurantP = {
 Order Recieved ${this.starterMenuP[starterIndex]} and ${this.mainMenuP[mainIndex]} will be delivered to ${address} at ${time}
     `);
   },
+
+  // New method added for learning about iteables
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Delicious Pasta with ${ing1}, ${ing2}, ${ing3}, `);
+  },
 };
 
 // Export restaurantP
