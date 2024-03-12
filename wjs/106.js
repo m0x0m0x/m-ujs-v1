@@ -94,11 +94,12 @@ console.log(puzza, rodo, othersp);
 // Rest pattern for objects
 paraText("Also works in objects, since you were thinking abou tthis ");
 
+// Sybtax is same for objects
 const { sat, ...weekdays } = restaurantP.openingHoursP;
 console.log(weekdays);
 
 // Example function for rest
-
+paraText("Using spread operators in a function");
 const addP = function (...numbersP) {
   let sum = 0;
   for (let i = 0; i < numbersP.length; i++) sum += numbersP[i];
@@ -108,3 +109,11 @@ const addP = function (...numbersP) {
 // Any arbitraty amount without putting in many argument
 addP(2, 3);
 addP(5, 3, 7, 2);
+
+// Using spread operator in teh function
+const xP = [23, 5, 7];
+addP(...xP);
+
+// edge cases
+restaurantP.orderPizza("mushrooms", "onion", "olives");
+restaurantP.orderPizza("mushrooms");

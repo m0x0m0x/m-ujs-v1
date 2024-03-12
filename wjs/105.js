@@ -56,6 +56,11 @@ Order Recieved ${this.starterMenuP[starterIndex]} and ${this.mainMenuP[mainIndex
   orderPasta: function (ing1, ing2, ing3) {
     console.log(`Delicious Pasta with ${ing1}, ${ing2}, ${ing3}, `);
   },
+
+  // Pizza ordering metho d
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient), console.log(otherIngredients);
+  },
 };
 
 // Export restaurantP
