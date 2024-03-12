@@ -54,7 +54,7 @@ const str = "jina";
 const jinaLetters = [...str, "", "F."];
 console.log(jinaLetters);
 
-// Real world example
+// Real world example , using spread operator below
 
 // const ingredientsP = [
 //   prompt(`Let\'s make Pasta! - Ingredient 1`),
@@ -96,3 +96,15 @@ paraText("Also works in objects, since you were thinking abou tthis ");
 
 const { sat, ...weekdays } = restaurantP.openingHoursP;
 console.log(weekdays);
+
+// Example function for rest
+
+const addP = function (...numbersP) {
+  let sum = 0;
+  for (let i = 0; i < numbersP.length; i++) sum += numbersP[i];
+  console.log(sum);
+};
+
+// Any arbitraty amount without putting in many argument
+addP(2, 3);
+addP(5, 3, 7, 2);
