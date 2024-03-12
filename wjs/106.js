@@ -90,3 +90,9 @@ const [puzza, , rodo, ...othersp] = [
   ...restaurantP.starterMenuP,
 ];
 console.log(puzza, rodo, othersp);
+
+// Rest pattern for objects
+paraText("Also works in objects, since you were thinking abou tthis ");
+
+const { sat, ...weekdays } = restaurantP.openingHoursP;
+console.log(weekdays);
