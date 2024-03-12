@@ -53,6 +53,15 @@ Order Recieved ${this.starterMenuP[starterIndex]} and ${this.mainMenuP[mainIndex
   },
 };
 
+// Export restaurantP
+export const objectOne = {
+  firstName: "Cari",
+  job: "Program",
+};
+
+// The following line should be added to export the object
+export default ObjectOnerestaurantP;
+
 // Using the order method
 paraText("Testing an orderDelivery Method");
 restaurantP.orderDelivery({
