@@ -64,3 +64,6 @@ console.log("hello" && 23 && null && "jonas");
 if (restaurantP.orderPizza) {
   restaurantP2.orderPizza("gun", "bat");
 }
+
+// Using && - Similar to the if block above
+restaurantP2.orderPizza && restaurantP2.orderPizza("ji");
