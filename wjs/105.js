@@ -60,7 +60,7 @@ export const objectOne = {
 };
 
 // The following line should be added to export the object
-export default ObjectOnerestaurantP;
+export default restaurantP;
 
 // Using the order method
 paraText("Testing an orderDelivery Method");

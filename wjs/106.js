@@ -39,3 +39,17 @@ console.log(newMeny);
 
 // Shallow copying
 const mainMenuCopy = [...restaurantP.mainMenuP];
+
+// Joining Arrays
+paraText("Make new array joinng elements from one array");
+const menu2 = [...restaurantP.starterMenuP, ...restaurantP.mainMenuP];
+console.log(menu2);
+console.table(menu2);
+
+// Iterables Testing
+subHead("Testing iterables");
+const str = "jina";
+
+// Syntax used for making an array of characters from strings
+const jinaLetters = [...str, "", "F."];
+console.log(jinaLetters);
