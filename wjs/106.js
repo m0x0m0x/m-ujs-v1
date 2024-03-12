@@ -77,3 +77,16 @@ const restaurantPCopy = { ...restaurantP };
 restaurantPCopy.name = "Pinty Sniff";
 console.log(restaurantP.nameP);
 console.log(restaurantPCopy.name);
+
+// Rest Pattern
+subHead("Rest Pattern");
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+// Rest operator for building a menu
+
+const [puzza, , rodo, ...othersp] = [
+  ...restaurantP.mainMenuP,
+  ...restaurantP.starterMenuP,
+];
+console.log(puzza, rodo, othersp);
