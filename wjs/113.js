@@ -1,3 +1,4 @@
+"use strict";
 /* 
 113: Enahanced Object Literals
 */
@@ -10,20 +11,30 @@ mainHead(`113: Enahanced Object Literals`);
 
 // Making a new object to learn about the enhanced object literals
 
+const weekdays = ["mo", "tu", "we", "th", "fr", "sa", "su"];
+
 const HoursP = {
-  thu: {
+  [weekdays[3]]: {
     open: 12,
     close: 22,
   },
-  fri: {
+  [weekdays[4]]: {
     open: 11,
     close: 23,
   },
-  sat: {
+  [weekdays[5]]: {
     open: 0,
     close: 24,
   },
+  [`day-${2 + 0}`]: {
+    open: 9,
+    close: 6,
+  },
 };
+
+// Printing the object above
+paraText("Doing computations");
+console.log(HoursP);
 
 const restaurantP2 = {
   nameP: "Woman Juices",
@@ -58,4 +69,7 @@ const restaurantP2 = {
   },
 };
 
+paraText("Printing the new object with method");
 console.log(restaurantP2);
+
+restaurantP2.orderPasta("Lin");
