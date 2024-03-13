@@ -13,7 +13,7 @@ mainHead(`109: The Nullish Coalescing Operator - NCO`);
 const restaurantP3 = { ...restaurantP };
 console.log(restaurantP3);
 
-restaurantP3.clz = 10;
+restaurantP3.clz = 100;
 const cl2 = restaurantP3.clz || 99;
 console.log(cl2);
 
