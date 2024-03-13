@@ -16,4 +16,4 @@ console.table(gPusy);
 subHead("1. Creating two player");
 
 const [players1, players2] = gPusy.players;
-console.log();
+console.log(players1);
