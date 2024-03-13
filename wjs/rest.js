@@ -58,7 +58,7 @@ export const restaurantP = {
 // export default restaurantP;
 
 // Exporting the enhanced restaurant object
-const weekdays = ["mo", "tu", "we", "th", "fr", "sa", "su"];
+export const weekdays = ["mo", "tu", "we", "th", "fr", "sa", "su"];
 
 const HoursP = {
   [weekdays[3]]: {
