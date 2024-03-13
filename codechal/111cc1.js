@@ -12,4 +12,8 @@ mainHead("111 Coding Challenge #1");
 subHead("View object");
 console.table(gPusy);
 
-// Solutions Zone
+//1. Creating 2 players
+subHead("1. Creating two player");
+
+const [players1, players2] = gPusy.players;
+console.log();
