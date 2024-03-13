@@ -27,6 +27,17 @@ console.log(re2.HoursP?.sa?.open);
 paraText("Printing day and times with OC");
 for (const day of we) {
   //   console.log(day);
-  const open = re2.HoursP[day]?.open || "closed";
+  const open = re2.HoursP[day]?.open ?? "closed";
   console.log(`On ${day}, we open at ${open}`);
 }
+
+// OC working on methods ot see if it exists
+subHead("OC works on methods");
+console.log(re2.order?.(0, 1) ?? "No Method");
+console.log(re2.orderRi?.(0, 1) ?? "No Method");
+
+//OC works on arrays also
+subHead("OC on arrays");
+const users = [{ name: "ina" }, { email: "liqo@hojo.io" }];
+// console.log(users);
+console.log(users[0]?.name ?? "User Array Empty ");
