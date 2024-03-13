@@ -22,3 +22,19 @@ paraText("New Method");
 for (const item of menu) console.log(item);
 
 // Getting index is difficult
+paraText("Printing the index also in a nice format");
+for (const cu of menu.entries()) {
+  console.log(`${cu[0] + 1}:${cu[1]}`);
+}
+
+// Modern method above
+paraText("Modern Method");
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}:${el}`);
+}
+
+paraText("Examining the menu.entries iterator");
+console.log([...menu.entries()]);
+
+// Just printing the menu variable which is extracted from restaurantP2
+console.log(menu);
