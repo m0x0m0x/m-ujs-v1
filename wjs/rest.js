@@ -3,7 +3,7 @@ This the restaurant object which is being used serveral times will
 put that object here and then import it
 */
 
-const restaurantP = {
+export const restaurantP = {
   nameP: "Woman Juices",
   locationP: "Sweaty Gym Booties",
   categoriesP: ["Sno", "Far", "Sca", "Pis", "Spi"],
@@ -55,4 +55,4 @@ const restaurantP = {
 };
 
 // The following line should be added to export the object
-export default restaurantP;
+// export default restaurantP;
