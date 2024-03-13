@@ -5,3 +5,12 @@
 # Purpose
 
 > Section 9 -- Deep Woman PoopLove
+
+# Dirs Explanation
+
+|           Name            |                Description                 |
+| :-----------------------: | :----------------------------------------: |
+|      [`ass`](./Ass/)      |             Assignmen JS here              |
+|    [`cursa`](./cursa/)    |              U Main Git Repo               |
+|      [`wjs`](./wjs/)      | Main js files here, called in `index.html` |
+| [`codecahl`](./codechal/) |    CodeChalenges to suck as ass juices     |
