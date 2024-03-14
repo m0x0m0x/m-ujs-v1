@@ -65,3 +65,30 @@ for (let num of oddsPvalues) {
 //   return panty;
 // }
 // // averPusy(oddsP);
+
+subHead("Given Solutions");
+
+//1 . Write Goal number and player
+subHead("Solution 1");
+for (const [i, player] of gPusy.scored.entries())
+  console.log(`Goal ${i + 1}: ${player}`);
+
+//2. Calculate the average from the array
+subHead("Solution 2");
+const odds = Object.values(gPusy.odds);
+let average1 = 0;
+for (const odd of odds) average1 += odd;
+average1 /= odds.length;
+console.log(`
+Average of ${odds} is ${average1}
+`);
+
+//3. Print the contents of the object to the console
+subHead("Solution 3");
+
+for (const [team, odd] of Object.entries(gPusy.odds)) {
+  const teamStr = team === "x" ? "draw" : `Victory ${gPusy.team1}`;
+  console.log(`
+  Odd of ${teamStr} ${odd}
+  `);
+}
