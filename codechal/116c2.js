@@ -47,17 +47,21 @@ console.log(Object.values(oddsP));
 const oddsPvalues = Object.values(oddsP);
 console.log(`oddsPvalues typeof = ${typeof oddsPvalues}`);
 
-for (let num of oddsPvalues.entries()) {
-  console.log();
+paraText("Loop Test1");
+
+for (let num of oddsPvalues) {
+  let sumP = 0;
+  sumP += num;
+  console.log(sumP);
 }
 
-// To proceed write a function that can calculate the array
-function averPusy(arr) {
-  let sum = 0;
-  for (const element of arr) {
-    sum += element;
-  }
-  let panty = sum / arr.length;
-  return panty;
-}
-// averPusy(oddsP);
+// // To proceed write a function that can calculate the array
+// function averPusy(arr) {
+//   let sum = 0;
+//   for (const element of arr) {
+//     sum += element;
+//   }
+//   let panty = sum / arr.length;
+//   return panty;
+// }
+// // averPusy(oddsP);
