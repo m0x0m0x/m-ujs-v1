@@ -43,4 +43,21 @@ paraText("Printing out keys and values");
 console.log(Object.keys(oddsP));
 console.log(Object.values(oddsP));
 
-//
+// DC values
+const oddsPvalues = Object.values(oddsP);
+console.log(`oddsPvalues typeof = ${typeof oddsPvalues}`);
+
+for (let num of oddsPvalues.entries()) {
+  console.log();
+}
+
+// To proceed write a function that can calculate the array
+function averPusy(arr) {
+  let sum = 0;
+  for (const element of arr) {
+    sum += element;
+  }
+  let panty = sum / arr.length;
+  return panty;
+}
+// averPusy(oddsP);
