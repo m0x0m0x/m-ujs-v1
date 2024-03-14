@@ -43,3 +43,28 @@ const time = 21;
 const ans1 = rest.get(time > rest.get("open") && time < rest.get("close"));
 console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
 console.log(ans1);
+
+// See if something contains ley
+subHead("Checking if keys exist");
+console.log(rest.has("Categories"));
+
+subHead("Deleting Keys");
+// Delete the keys
+rest.delete(2);
+console.log(rest);
+// rest.clear()
+console.log(rest.size);
+
+subHead("Using Different Keys");
+// using array as keys
+const arr1 = [1, 2];
+rest.set(arr1, "Ar1");
+console.log(rest);
+
+// Since it isnt the same object in the heap
+// Note retrievign the keys only here
+console.log(rest.get(arr1));
+
+// Selecting page element
+rest.set(document.querySelector("h2"), "Heading2");
+console.log(rest);
