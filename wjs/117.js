@@ -86,4 +86,8 @@ const restStuffUnique2 = [...restStuffUnique];
 console.log(restStuffUnique2);
 console.log(restStuffUnique);
 
-// Conversion of set to array
+// Getting the size without creating an array
+console.log(new Set(["Waiter", "Sheph", "Waiter", "Sheph", "Manager"]).size);
+
+// Getting Size
+console.log(new Set("Jina").size);
