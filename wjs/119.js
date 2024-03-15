@@ -32,6 +32,12 @@ for (const [k, v] of queS) {
   if (typeof k === "number") console.log(`Answer ${k}: ${v}`);
 }
 subHead("Getting input from user and compare against boolean keys");
-const ans1 = Number(prompt("Bastard What Say?"));
+const ans1 = Number(3);
 console.log(ans1);
 console.log(queS.get(queS.get("correct") === ans1));
+
+subHead("Convert p to an array ");
+console.log([...queS]);
+console.log(queS.entries());
+console.log(queS.keys());
+console.log(queS.values());
