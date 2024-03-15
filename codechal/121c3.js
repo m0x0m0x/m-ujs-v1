@@ -27,3 +27,14 @@ subHead("3. Calculating Average");
 const time = [...gE.keys()].pop();
 console.log(`Average = ${time / gE.size}`);
 console.log(time);
+
+//4. Looping through Map
+for (const [k, v] of gE) {
+  if (typeof k === "number") console.log(`Answer ${k}: ${v}`);
+}
+
+paraText("Given Solution Here");
+for (const [min, event] of gE) {
+  const half = min <= 45 ? "FIRST" : "SECOND";
+  console.log(`${half} - HALF ${min}: ${event}`);
+}
