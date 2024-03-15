@@ -12,6 +12,10 @@ mainHead(`
 124: Working with strings Part3
 `);
 
+mainHead(`
+122: Part 1 Below ⬇️
+`);
+
 // Old study section here
 subHead("Revision Stuff in this area");
 paraText("Quick test of sets");
@@ -82,3 +86,25 @@ console.log(airlineP.slice(-3));
 console.log(airlineP.slice(1, -3));
 
 subHead("Function to determine Seat Positon");
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seats
+  const s = seat.slice(-1);
+  s == "B" || s == "E" ? console.log("😔 Middle Seat") : console.log("✅ GUD");
+};
+
+checkMiddleSeat("69B");
+checkMiddleSeat("66A");
+checkMiddleSeat("33E");
+
+paraText("String Object Function");
+console.log(new String("jams"));
+
+// Further calling methods on this string object
+console.log("jams"[(-3, 2)]);
+
+// Checking strings
+console.log(typeof new String("Jams").slice(1));
+
+mainHead(`
+123: Part 2 Below ⬇️
+`);
