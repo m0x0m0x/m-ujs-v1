@@ -38,6 +38,6 @@ console.log(queS.get(queS.get("correct") === ans1));
 
 subHead("Convert p to an array ");
 console.log([...queS]);
-console.log(queS.entries());
-console.log(queS.keys());
-console.log(queS.values());
+console.log(...queS.entries());
+console.log(...queS.keys());
+console.log(...queS.values());
