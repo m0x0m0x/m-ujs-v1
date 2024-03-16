@@ -108,3 +108,6 @@ console.log(typeof new String("Jams").slice(1));
 mainHead(`
 123: Part 2 Below ⬇️
 `);
+
+// Define new variable here for usage
+const airL = "Booty Sniff Airlines";
