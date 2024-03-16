@@ -269,3 +269,5 @@ const capiNam2 = function (name) {
 };
 
 capiNam2("zing bang");
+
+subHead("Padding String");
