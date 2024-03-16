@@ -109,5 +109,38 @@ mainHead(`
 123: Part 2 Below ⬇️
 `);
 
+subHead("Text Look Manipulations");
+
+paraText("UpperCase and LowerCase");
 // Define new variable here for usage
 const airL = "Booty Sniff Airlines";
+console.log(airL.toLowerCase());
+console.log(airL.toUpperCase());
+console.log("drinkz".toLowerCase());
+console.log("drinkz".toUpperCase());
+
+// Fix capitalization in passenfer name
+const passe2 = "sIjun";
+const passe2Lower = passe2.toLowerCase();
+console.log(passe2Lower);
+const passeCorect = passe2Lower[0].toUpperCase() + passe2Lower.slice(1);
+console.log(`
+Corrected Capitalization = ${passeCorect}
+`);
+
+subHead("Fucntion for Uppercase ");
+// Function that will correct passenger name
+function corectPN(name) {
+  const corectPNLower = name.toLowerCase();
+  const corectPNLowerCorrection =
+    corectPNLower[0].toUpperCase() + corectPNLower.slice(1);
+  console.log(`
+  Input = ${name}
+  Cor =  ${corectPNLowerCorrection}
+  `);
+}
+corectPN("diUm");
+corectPN("spIzmsiop");
+
+paraText("Optimized Function");
+function corectPN2(name) {}
