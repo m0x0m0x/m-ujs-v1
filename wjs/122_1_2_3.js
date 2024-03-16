@@ -105,6 +105,10 @@ console.log("jams"[(-3, 2)]);
 // Checking strings
 console.log(typeof new String("Jams").slice(1));
 
+// ======= New Section ===========
+// ======= New Section ===========
+// ======= New Section ===========
+
 mainHead(`
 123: Part 2 Below ⬇️
 `);
@@ -213,3 +217,11 @@ const checkBg1 = function (items) {
 checkBg1("Laptop, food , knife");
 checkBg1("Socks and Camera");
 checkBg1("Socs and  Gun");
+
+// ======= New Section ===========
+// ======= New Section ===========
+// ======= New Section ===========
+
+mainHead(`
+124: Part 3 Below ⬇️
+`);
