@@ -172,3 +172,19 @@ O = ${textTrim}
 TrimStart = ${textTrim.trimStart()}
 TrimEnd   = ${textTrim.trimEnd()}
 `);
+
+subHead("Replacing Parts of Strings");
+// Using Replace commands
+const priceGB = "288,77E";
+const priceUS = priceGB.replace("E", "O").replace(",", ".");
+console.log(priceGB, priceUS);
+
+// Using words
+const anno1 = "All passengers Boarding come to Boarding 23";
+console.log(anno1.replaceAll("Boarding", "GATE"));
+
+// Using regeular expressions for targeting door
+const anno2 = "apple juice made of apples with apple icecream";
+console.log(anno2.replace(/apple/g, "Banana"));
+
+subHead("Methods that return booleans");
