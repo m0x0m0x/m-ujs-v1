@@ -188,3 +188,28 @@ const anno2 = "apple juice made of apples with apple icecream";
 console.log(anno2.replace(/apple/g, "Banana"));
 
 subHead("Methods that return booleans");
+const pla1 = "A320neo";
+console.log(pla1.includes("A320"));
+console.log(pla1.includes("Boeing"));
+console.log(pla1.startsWith("A3"));
+console.log(pla1.endsWith("o"));
+
+paraText("Using startswith and endswith");
+// Check plane art part of new
+const pla2 = "Airbusneo";
+pla2.startsWith("Airbus") && pla2.endsWith("neo")
+  ? console.log("Part of new Airbus Family")
+  : console.log("NoBastard");
+
+// Excercise
+paraText("Excercise for testing for items ");
+const checkBg1 = function (items) {
+  const checkBg1LowCase = items.toLowerCase();
+  checkBg1LowCase.includes("knife") || checkBg1LowCase.includes("gun")
+    ? console.log("%c 😡Bastard No 🗡️ or 🔫 ", "color:red")
+    : console.log("%c ✅✅✅go fucker ✅✅✅", "color:green");
+};
+
+checkBg1("Laptop, food , knife");
+checkBg1("Socks and Camera");
+checkBg1("Socs and  Gun");
