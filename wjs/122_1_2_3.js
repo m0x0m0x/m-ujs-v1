@@ -271,3 +271,29 @@ const capiNam2 = function (name) {
 capiNam2("zing bang");
 
 subHead("Padding String");
+
+const mesg1 = "Go to Gate 23";
+console.log(mesg1.padStart(25, "+").padEnd(35, "+"));
+console.log("nina".padStart(25, "+").padEnd(50, ")"));
+console.log(" jima ".padStart(10, "+").padEnd(13, "-"));
+
+paraText("Function that does masking on credit card number");
+const maskCrCa = function (number) {
+  const str = number + "";
+  const last = str.slice(-4);
+  return console.log(last.padStart(str.length, "*"));
+};
+
+maskCrCa(123213);
+maskCrCa("TestCard");
+
+subHead("Repeat MEthod");
+console.log("WARNING...Donna...".repeat(2));
+
+const planesInLine = function (n) {
+  console.log(`Now = ${n} planes in line ${"✈️".repeat(n)} `);
+};
+
+planesInLine(5);
+planesInLine(2);
+planesInLine(20);
