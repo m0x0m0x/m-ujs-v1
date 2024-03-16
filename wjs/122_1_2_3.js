@@ -143,4 +143,32 @@ corectPN("diUm");
 corectPN("spIzmsiop");
 
 paraText("Optimized Function");
-function corectPN2(name) {}
+// Function optimization done with google geminni
+function optimizedCorectPN(name) {
+  // Combine steps, using a template literal for readability:
+  console.log(`
+    Input = ${name}
+    Cor   = ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}`);
+}
+optimizedCorectPN("lIoNkP");
+
+subHead("Check Email Function");
+// Comparing email
+const emailF = "jin@jin.io";
+const loginEmail = "    Jin@Jin.iO \n";
+
+// const lowerEmail = loginEmail.toLocaleLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// console.log(trimmedEmail);
+
+const normalE = loginEmail.toLowerCase().trim();
+console.log(normalE);
+console.log(emailF === normalE);
+
+// Trimming Space - Not visible directly
+let textTrim = "  LickLick  ";
+console.log(`
+O = ${textTrim}
+TrimStart = ${textTrim.trimStart()}
+TrimEnd   = ${textTrim.trimEnd()}
+`);
