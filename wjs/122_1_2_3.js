@@ -225,3 +225,47 @@ checkBg1("Socs and  Gun");
 mainHead(`
 124: Part 3 Below ⬇️
 `);
+
+subHead("Split Method");
+
+const splitText1 = "big+booty+dancer";
+const splitText1Arr = "giant+sbooty+sniffers".split("+");
+console.log(splitText1Arr[1]);
+
+console.log(splitText1);
+console.log(splitText1.split("+"));
+console.log("Bina Juni".split(" "));
+
+const [nameFirst, nameSecond] = "minto hona".split(" ");
+console.log(nameFirst, nameSecond);
+
+subHead("Join Method");
+
+const newName = ["Ms", nameFirst, nameSecond.toUpperCase()].join("<--->");
+console.log(newName);
+
+paraText("Function to capitalize names");
+
+const capiNam = function (name) {
+  const nama = name.split(" ");
+  const namaUpper = [];
+  for (const n of nama) {
+    namaUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namaUpper.join(" "));
+};
+
+capiNam("jessica ann");
+capiNam("dina onta");
+
+paraText("Above function different method");
+const capiNam2 = function (name) {
+  const nama = name.split(" ");
+  const namaUpper = [];
+  for (const n of nama) {
+    namaUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namaUpper.join(" "));
+};
+
+capiNam2("zing bang");
