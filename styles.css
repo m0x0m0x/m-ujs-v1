@@ -97,7 +97,7 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 80%; /* Adjusts based on container width */
+  width: 90%; /* Adjusts based on container width */
   min-height: 20vh; /* Minimum height of 10% viewport height */
   background-color: #000000;
 }
